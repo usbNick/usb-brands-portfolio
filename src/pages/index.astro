@@ -1,4 +1,20 @@
 ---
+// const brands = ["McDavid", "Shock Doctor", "Nathan", "KT Tape", "Spalding"]
+
+const brands = [
+
+]
+
+const mcdavid = {
+	brandName: "McDavid",
+	coverPic: "https://usb2b.eu/wp-content/uploads/Mcdavid-v2.jpg",
+	brandLink: "https://www.unitedspb.eu/mcdavid/#becomecustomer",
+	description: "Supports, protective pads & recovery",
+	websiteUrl: "https://www.mcdavid.eu/",
+	fbUrl: "https://www.facebook.com/McDavidEU/",
+	igUrl: "https://www.instagram.com/mcdavid/"
+}
+
 ---
 
 <html lang="en">
@@ -8,38 +24,59 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>United Sports Brands Europe - Brand Portfolio</title>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SPYDW0FY9D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SPYDW0FY9D');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-262804277-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-262804277-1');
+</script>
 	</head>
-	<body class="bg-slate-800">
+	<body class="bg-gray-900" style="background-image: url(https://usb2b.eu/wp-content/uploads/Login-BG.jpg);  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; ">
 
 
 		<div class="container p-4 mx-auto">
 
 			<div class="my-10 text-white">
 				<h1 class="font-bold text-3xl">United Sports Brands Europe</h1>
-				<h2 class="font-semibold text-2xl">Our brands</h2>
+				<!-- <h2 class="font-semibold text-2xl">Our brands</h2> -->
 			</div>
 
 
 			<ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
 
 				<!-- McDavid -->
-				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
-				  <div class="flex flex-1 flex-col p-8">
-					<img class="mx-auto h-32 w-64 flex-shrink-0 rounded-full" src="https://usb2b.eu/wp-content/uploads/Mcdavid-v2.jpg" alt="">
-					<h3 class="mt-6 text-sm font-medium text-gray-900">McDavid</h3>
+				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-md bg-white text-center shadow">
+				  <div class="flex flex-1 flex-col p-4">
+					<img class="w-full flex-shrink-0 rounded-md" src="https://usb2b.eu/wp-content/uploads/Mcdavid-v2.jpg" alt="">
+					<h3 class="mt-6 text-sm font-medium text-gray-900">{mcdavid.brandName}</h3>
 					<dl class="mt-1 flex flex-grow flex-col justify-between">
 					  <dt class="sr-only">Title</dt>
 					  <dd class="text-sm text-gray-500">Supports, protective pads & recovery</dd>
 					  <dt class="sr-only">Role</dt>
-					  <dd class="mt-3">
-						<span class="rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/mcdavid/#becomecustomer" target="_blank">Contact brand manager</a></span>
-					  </dd>
+					  <!-- <dd class="mt-3">
+						<span class="rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/mcdavid/#becomecustomer" target="_blank">Contact brand manager</a></span>
+					  </dd> -->
 					</dl>
 				  </div>
 				  <div>
 					<div class="-mt-px flex divide-x divide-gray-200">
 					  <div class="flex w-4/6 px-3">
-						<a href="https://www.mcdavid.eu/" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+						<a href="https://www.mcdavid.eu/?utm_source=polybag&utm_medium=qr_link&utm_campaign=brands_landingpage" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
 						  <!-- Heroicon name: globe -->
 						  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
@@ -63,23 +100,23 @@
 				</li>
 	
 				<!-- Shock Doctor -->
-				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
-					<div class="flex flex-1 flex-col p-8">
-					  <img class="mx-auto h-32 w-64 flex-shrink-0 rounded-full" src="https://usb2b.eu/wp-content/uploads/DS3-v3.jpg" alt="">
+				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-md bg-white text-center shadow">
+					<div class="flex flex-1 flex-col p-4">
+					  <img class="w-full flex-shrink-0 rounded-md" src="https://usb2b.eu/wp-content/uploads/DS3-v3.jpg" alt="">
 					  <h3 class="mt-6 text-sm font-medium text-gray-900">Shock Doctor</h3>
 					  <dl class="mt-1 flex flex-grow flex-col justify-between">
 						<dt class="sr-only">Title</dt>
 						<dd class="text-sm text-gray-500">Mouthguards & protective cups for high impact sports</dd>
 						<dt class="sr-only">Role</dt>
-						<dd class="mt-3">
-						  <span class="rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/shock-doctor/#becomecustomer" target="_blank">Contact brand manager</a></span>
-						</dd>
+						<!-- <dd class="mt-3">
+						  <span class="rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/shock-doctor/#becomecustomer" target="_blank">Contact brand manager</a></span>
+						</dd> -->
 					  </dl>
 					</div>
 					<div>
 					  <div class="-mt-px flex divide-x divide-gray-200">
 						<div class="flex w-4/6 px-3">
-						  <a href="https://www.shockdoctorsports.eu/" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+						  <a href="https://www.shockdoctorsports.eu/?utm_source=polybag&utm_medium=qr_link&utm_campaign=brands_landingpage" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
 							<!-- Heroicon name: mini/envelope -->
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
@@ -102,23 +139,23 @@
 				  </li>
 
 				<!-- Nathan -->
-				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
-					<div class="flex flex-1 flex-col p-8">
-					  <img class="mx-auto h-32 w-64 flex-shrink-0 rounded-full" src="https://usb2b.eu/wp-content/uploads/Nathan-v2.jpg" alt="">
+				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-md bg-white text-center shadow">
+					<div class="flex flex-1 flex-col p-4">
+					  <img class="w-full flex-shrink-0 rounded-md" src="https://usb2b.eu/wp-content/uploads/Nathan-v2.jpg" alt="">
 					  <h3 class="mt-6 text-sm font-medium text-gray-900">Nathan</h3>
 					  <dl class="mt-1 flex flex-grow flex-col justify-between">
 						<dt class="sr-only">Title</dt>
-						<dd class="text-sm text-gray-500">Running vests, accessories, bottles & visibility</dd>
+						<dd class="text-sm text-gray-500">Running apparel, vests, accessories, bottles & visibility</dd>
 						<dt class="sr-only">Role</dt>
-						<dd class="mt-3">
-						  <span class="rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/nathan/#becomecustomer" target="_blank">Contact brand manager</a></span>
-						</dd>
+						<!-- <dd class="mt-3">
+						  <span class="rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/nathan/#becomecustomer" target="_blank">Contact brand manager</a></span>
+						</dd> -->
 					  </dl>
 					</div>
 					<div>
 					  <div class="-mt-px flex divide-x divide-gray-200">
 						<div class="flex w-4/6 px-3">
-						  <a href="https://www.nathansport.eu/" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+						  <a href="https://www.nathansport.eu/?utm_source=polybag&utm_medium=qr_link&utm_campaign=brands_landingpage" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
 							<!-- Heroicon name: mini/envelope -->
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
@@ -141,23 +178,23 @@
 				  </li>
 
 				<!-- KT Tape -->
-				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
-					<div class="flex flex-1 flex-col p-8">
-					  <img class="mx-auto h-32 w-64 flex-shrink-0 rounded-full" src="https://usb2b.eu/wp-content/uploads/USB-B2BShop-Button-KTtape.png" alt="">
+				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-md bg-white text-center shadow">
+					<div class="flex flex-1 flex-col p-4">
+					  <img class="w-full flex-shrink-0 rounded-md" src="https://usb2b.eu/wp-content/uploads/USB-B2BShop-Button-KTtape.png" alt="">
 					  <h3 class="mt-6 text-sm font-medium text-gray-900">KT Tape</h3>
 					  <dl class="mt-1 flex flex-grow flex-col justify-between">
 						<dt class="sr-only">Title</dt>
 						<dd class="text-sm text-gray-500">Kinesiology tape for sports & recovery</dd>
 						<dt class="sr-only">Role</dt>
-						<dd class="mt-3">
-						  <span class="rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/kt-tape/#becomecustomer" target="_blank">Contact brand manager</a></span>
-						</dd>
+						<!-- <dd class="mt-3">
+						  <span class="rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/kt-tape/#becomecustomer" target="_blank">Contact brand manager</a></span>
+						</dd> -->
 					  </dl>
 					</div>
 					<div>
 					  <div class="-mt-px flex divide-x divide-gray-200">
 						<div class="flex w-4/6 px-3">
-						  <a href="https://www.kttape.shop/" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+						  <a href="https://www.kttape.shop/?utm_source=polybag&utm_medium=qr_link&utm_campaign=brands_landingpage" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
 							<!-- Heroicon name: mini/envelope -->
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
@@ -180,23 +217,23 @@
 				  </li>
 
 				<!-- Spalding -->
-				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
-					<div class="flex flex-1 flex-col p-8">
-					  <img class="mx-auto h-32 w-64 flex-shrink-0 rounded-full" src="https://usb2b.eu/wp-content/uploads/USB-B2BShop-Button-Spalding.png" alt="">
+				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-md bg-white text-center shadow">
+					<div class="flex flex-1 flex-col p-4">
+					  <img class="w-full flex-shrink-0 rounded-md" src="https://usb2b.eu/wp-content/uploads/USB-B2BShop-Button-Spalding.png" alt="">
 					  <h3 class="mt-6 text-sm font-medium text-gray-900">Spalding</h3>
 					  <dl class="mt-1 flex flex-grow flex-col justify-between">
 						<dt class="sr-only">Title</dt>
 						<dd class="text-sm text-gray-500">Heritage of high quality basketball products</dd>
 						<dt class="sr-only">Role</dt>
-						<dd class="mt-3">
-						  <span class="rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/spalding-2/#becomecustomer" target="_blank">Contact brand manager</a></span>
-						</dd>
+						<!-- <dd class="mt-3">
+						  <span class="rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/spalding-2/#becomecustomer" target="_blank">Contact brand manager</a></span>
+						</dd> -->
 					  </dl>
 					</div>
 					<div>
 					  <div class="-mt-px flex divide-x divide-gray-200">
 						<div class="flex w-4/6 px-3">
-						  <a href="https://www.spalding-basketball.com/" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+						  <a href="https://www.spalding-basketball.com/?utm_source=polybag&utm_medium=qr_link&utm_campaign=brands_landingpage" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
 							<!-- Heroicon name: mini/envelope -->
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
@@ -217,6 +254,47 @@
 					  </div>
 					</div>
 				  </li>
+
+
+
+				<!-- Pearl Izumi -->
+				<li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-md bg-white text-center shadow">
+					<div class="flex flex-1 flex-col p-4">
+					  <img class="w-full flex-shrink-0 rounded-md" src="https://usb2b.eu/wp-content/uploads/b2b-PI-700x400-1.jpg" alt="">
+					  <h3 class="mt-6 text-sm font-medium text-gray-900">PEARL iZUMi</h3>
+					  <dl class="mt-1 flex flex-grow flex-col justify-between">
+						<dt class="sr-only">Title</dt>
+						<dd class="text-sm text-gray-500">Cycling clothing, footwear & accessories</dd>
+						<dt class="sr-only">Role</dt>
+						<!-- <dd class="mt-3">
+						  <span class="rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-800"><a href="https://www.unitedspb.eu/spalding-2/#becomecustomer" target="_blank">Contact brand manager</a></span>
+						</dd> -->
+					  </dl>
+					</div>
+					<div>
+					  <div class="-mt-px flex divide-x divide-gray-200">
+						<div class="flex w-4/6 px-3">
+						  <a href="https://pearlizumi.eu/?utm_source=polybag&utm_medium=qr_link&utm_campaign=brands_landingpage" target="_blank" class="relative -mr-px inline-flex w-0 flex-1 items-center rounded-bl-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+							<!-- Heroicon name: mini/envelope -->
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+							  </svg>
+							<span class="ml-3">Website</span>
+						  </a>
+						</div>
+						<div class="-ml-px flex w-1/6">
+						  <a href="https://www.facebook.com/PEARLiZUMiEurope/" target="_blank" class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+							<span class="">FB</span>
+						  </a>
+						</div>
+						<div class="-ml-px flex w-1/6">
+						  <a href="https://www.instagram.com/pearlizumi.eu/" target="_blank" class="relative inline-flex w-0 flex-1 items-center justify-center rounded-br-lg border border-transparent py-4 text-sm font-medium text-gray-700 hover:text-gray-500">
+							<span class="">IG</span>
+						  </a>
+						</div>
+					  </div>
+					</div>
+				  </li>
 				
 			  
 				<!-- More people... -->
@@ -224,48 +302,7 @@
 
 
 
-			  <!-- tools and links -->
-			  
-			  <div class="my-10">
-				<h2 class="font-semibold text-2xl text-white">Tools & Assets</h2>
-				<ul role="list" class="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
-
-				<!-- B2B Shop -->
-				  <li class="col-span-1 flex rounded-md shadow-sm">
-					<div class="flex-shrink-0 flex items-center justify-center w-16 bg-green-700 text-white text-sm font-medium rounded-l-md">B2B</div>
-					<div class="flex flex-1 items-center justify-between rounded-r-md border-t border-r border-b border-gray-200 bg-white">
-					  <div class="flex-1 px-4 py-2 text-sm">
-						<a href="https://www.usb2b.eu/" target="_blank" class="font-medium text-gray-900 hover:text-gray-600">B2B Shop</a>
-						<p class="text-gray-500">Online ordering for business partners</p>
-					  </div>
-					</div>
-				  </li>
-			  
-			  
-				  <!-- PreOrder Shop -->
-				  <li class="col-span-1 flex rounded-md shadow-sm">
-					<div class="flex-shrink-0 flex items-center justify-center w-16 bg-green-500 text-white text-sm font-medium rounded-l-md">B2B</div>
-					<div class="flex flex-1 items-center justify-between rounded-r-md border-t border-r border-b border-gray-200 bg-white">
-					  <div class="flex-1 px-4 py-2 text-sm">
-						<a href="https://preorder.usb2b.eu/" target="_blank" class="font-medium text-gray-900 hover:text-gray-600">PreOrder B2B Shop</a>
-						<p class="text-gray-500">Online pre-ordering for business partners</p>
-					  </div>
-					</div>
-				  </li>
-
-				  <!-- Canto -->
-				  <li class="col-span-1 flex rounded-md shadow-sm">
-					<div class="flex-shrink-0 flex items-center justify-center w-16 bg-pink-600 text-white text-sm font-medium rounded-l-md">Canto</div>
-					<div class="flex flex-1 items-center justify-between rounded-r-md border-t border-r border-b border-gray-200 bg-white">
-					  <div class="flex-1 px-4 py-2 text-sm">
-						<a href="https://unitedspb.canto.global/v/ProductImages/landing?viewIndex=0" target="_blank" class="font-medium text-gray-900 hover:text-gray-600">USBox</a>
-						<p class="text-gray-500">Digitals assets: Images | Videos | ...</p>
-					  </div>
-					</div>
-				  </li>
-
-				</ul>
-			  </div>
+			 
 
 
 		</div>
